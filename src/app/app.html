@@ -14,8 +14,21 @@
       <!-- Main Content -->
       <main class="main-content">
         <div class="header">
-          
-          
+          <header class="top-header">
+            <div class="top-row">
+              <nav class="top-nav">
+                <a routerLink="/home" routerLinkActive="active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                <a routerLink="/invoice" routerLinkActive="active"><i class="fa-solid fa-file-invoice-dollar"></i><span>Invoice</span></a>
+                <a routerLink="/contacts" routerLinkActive="active"><i class="fa-solid fa-address-book"></i><span>Contacts</span></a>
+                <a routerLink="/inbox" routerLinkActive="active"><i class="fa-solid fa-inbox"></i><span>Inbox</span></a>
+                <a routerLink="/kanban" routerLinkActive="active"><i class="fa-solid fa-table-columns"></i><span>Kanban</span></a>
+              </nav>
+              <form class="top-search" (submit)="$event.preventDefault()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search..."/>
+              </form>
+            </div>
+          </header>
         </div>
         <router-outlet></router-outlet>
       </main>
