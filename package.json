@@ -2,9 +2,9 @@
   "name": "admin-dashboard",
   "version": "0.0.0",
   "styles": [
-  "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-  "src/styles.css"
-],
+    "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+    "src/styles.css"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -47,6 +47,7 @@
     "@angular/build": "^20.3.7",
     "@angular/cli": "^20.3.7",
     "@angular/compiler-cli": "^20.3.0",
+    "@netlify/angular-runtime": "^3.0.0",
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
