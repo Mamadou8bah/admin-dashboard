@@ -8,6 +8,12 @@
   NODE_VERSION = "20"
   NPM_FLAGS = "--no-audit --progress=false --include=dev"
 
+[[redirects]]
+  from = "/*"
+  to = "/index.csr.html"
+  status = 200
+  force = true
+
 # Optional: speed up installs with npm ci cache
 # [functions]
 #   node_bundler = "esbuild"
