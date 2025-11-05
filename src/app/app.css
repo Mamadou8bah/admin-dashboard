@@ -22,6 +22,14 @@ html, body {
   height: 100%;
 }
 
+@media (max-width:684px) {
+  .sidebar {
+    width: 250px;
+    display: none;
+  }
+  
+}
+
 .app-title {
   font-size: 24px;
   font-weight: bold;
@@ -127,7 +135,7 @@ html, body {
 
 .top-search i { color: #6b7280; }
 
-/* Make the header sit flush with the left sidebar (remove left gap) */
+
 .header-bar {
   margin-left: -30px;
   padding-left: 30px;
@@ -135,7 +143,6 @@ html, body {
   width: calc(100% + 30px);
 }
 
-/* Remove internal left padding/margin inside the navbar */
 .header-bar .main-header.navbar {
   padding-left: 0;
   padding-right: 0;
