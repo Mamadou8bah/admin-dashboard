@@ -1,11 +1,12 @@
 # Netlify configuration for Angular app
 [build]
-  command = "npm ci && npm run build"
+  command = "npm ci --include=dev && npm run build"
   # Angular SSR build produces browser + server. We publish the static browser output.
   publish = "dist/Admin-Dashboard/browser"
 
 [build.environment]
   NODE_VERSION = "20"
+  NPM_FLAGS = "--no-audit --progress=false --include=dev"
 
 # Optional: speed up installs with npm ci cache
 # [functions]
